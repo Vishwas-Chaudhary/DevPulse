@@ -15,7 +15,7 @@ export async function getHackerNews(limit=15) {
         id: `hn-${s.id}`,
         source: "hackernews",
         title: s.title,
-        url:s.url || `https://new.ycombinator.com/item?id=${s.id}`,
+        url: s.url || `https://new.ycombinator.com/item?id=${s.id}`,
         score: s.score ?? 0,
         author: s.by,
         comments: s.descendants ?? 0,
